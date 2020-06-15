@@ -26,23 +26,25 @@ body {
     border-radius: 15px;
     padding: 15px;
   }
-  &__button {
-    font-size: 20px;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    &--save {
-      background-color: #00a896;
-    }
-    &--load {
-      background-color: #ff6b6b;
-      margin-left: 15px;
-    }
+  
+}
+
+.button {
+  font-size: 20px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &--save {
+    background-color: #00a896;
+  }
+  &--load {
+    background-color: #ff6b6b;
+    margin-left: 15px;
   }
 }
 
-.wrapper {
+.buttons {
   width: inherit;
   display: flex;
   justify-content: flex-end;
