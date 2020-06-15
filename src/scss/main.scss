@@ -1,7 +1,9 @@
 @import "~normalize.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap');
+
 @import "_variables";
-@import "modules/hello.scss";
+
 
 body {
   background: $wtf;
@@ -10,4 +12,38 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.main {
+  &__heading {
+    font-size: 51px;
+  }
+}
+
+.form {
+  &__textarea {
+    border-radius: 15px;
+    padding: 15px;
+  }
+  &__button {
+    font-size: 20px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &--save {
+      background-color: #00a896;
+    }
+    &--load {
+      background-color: #ff6b6b;
+      margin-left: 15px;
+    }
+  }
+}
+
+.wrapper {
+  width: inherit;
+  display: flex;
+  justify-content: flex-end;
 }
